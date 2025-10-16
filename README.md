@@ -2,6 +2,12 @@
 
 Uma aplicação web de agenda de contatos desenvolvida com Node.js, Express e MongoDB. Este projeto implementa um CRUD completo (Create, Read, Update, Delete) para gerenciamento de contatos, com sistema de autenticação de usuários e medidas de segurança.
 
+## Autor: 
+- Silvio Dias Ferreira
+
+## Contato:
+- silviodias.ms@gmail.com
+
 ## 📋 Funcionalidades
 
 - Cadastro e autenticação de usuários
