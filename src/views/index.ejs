@@ -1,0 +1,19 @@
+<%- include('partials/header') %>
+<h1>Bem-vindo à Agenda de Contatos</h1>
+
+<% if (user) { %>
+  <p>Olá, <strong><%= user.email %></strong> — gerencie seus contatos abaixo:</p>
+  <ul class="auth-buttons">
+    <li><a href="/contacts" class="btn btn-login">Ver contatos</a></li>
+    <li><a href="/contacts/new" class="btn btn-cadastrar">Novo contato</a></li>
+    <li><a href="/logout" class="btn btn-logout">Sair</a></li>
+  </ul>
+<% } else { %>
+  <p>Você não está logado. Faça login ou cadastre-se para começar a usar a agenda.</p>
+  <ul class="auth-buttons">
+    <li><a href="/login" class="btn btn-login">Entrar</a></li>
+    <li><a href="/register" class="btn btn-cadastrar">Criar conta</a></li>
+  </ul>
+<% } %>
+
+<%- include('partials/footer') %>

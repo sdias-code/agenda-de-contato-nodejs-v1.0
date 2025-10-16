@@ -1,0 +1,10 @@
+<%- include('partials/header') %>
+<h1>Login</h1>
+<p>Digite seu login e senha para entrar</p>
+<form method="POST" action="/login">
+  <input type="hidden" name="_csrf" value="<%= csrfToken %>">
+  <input type="email" name="email" placeholder="E-mail" required><br/>
+  <input type="password" name="password" placeholder="Senha" required><br/>
+  <button class="btn btn-cadastrar" type="submit">Entrar</button>
+</form>
+<%- include('partials/footer') %>

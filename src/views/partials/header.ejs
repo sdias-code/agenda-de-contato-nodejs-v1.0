@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agenda de Contatos</title>
+  <link rel="stylesheet" href="/vendor/bootstrap/bootstrap.min.css">
+
+  <link rel="stylesheet" href="/vendor/bootstrap//bootstrap-icons.css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+
+</head>
+<body class="bg-light">
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary mb-4">
+  <div class="container">
+    <a class="navbar-brand" href="/">📒 Minha Agenda</a>
+    <div>
+      <% if (user) { %>
+        <a href="/contacts" class="btn btn-light me-2">Lista de Contatos</a>
+        <a href="/logout" class="btn btn-logout">Sair</a>
+      <% } else { %>
+        <a href="/login" class="btn btn-light me-2">Entrar</a>
+        <a href="/register" class="btn btn-outline-light">Criar conta</a>
+      <% } %>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+  <% if (messages.success && messages.success.length) { %>
+    <div class="alert alert-success"><%= messages.success %></div>
+  <% } %>
+  <% if (messages.error && messages.error.length) { %>
+    <div class="alert alert-danger"><%= messages.error %></div>
+  <% } %>

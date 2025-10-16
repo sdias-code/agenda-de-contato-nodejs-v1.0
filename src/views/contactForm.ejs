@@ -1,0 +1,30 @@
+<%- include('partials/header') %>
+
+<div class="card shadow-sm p-4">
+  <h1 class="mb-3"><%= contact && contact._id ? 'Editar Contato' : 'Novo Contato' %></h1>
+
+  <form method="POST" action="<%= contact && contact._id ? '/contacts/edit/' + contact._id : '/contacts/new' %>">
+    <input type="hidden" name="_csrf" value="<%= csrfToken %>">
+    <div class="mb-3">
+      <label class="form-label">Nome</label>
+      <input class="form-control" name="nome" value="<%= contact.nome || '' %>" required>
+    </div>
+    <div class="mb-3">
+      <label class="form-label">Sobrenome</label>
+      <input class="form-control" name="sobrenome" value="<%= contact.sobrenome || '' %>">
+    </div>
+    <div class="mb-3">
+      <label class="form-label">Telefone</label>
+      <input class="form-control" name="telefone" value="<%= contact.telefone || '' %>" required>
+    </div>
+    <div class="mb-3">
+      <label class="form-label">E-mail</label>
+      <input class="form-control" type="email" name="email" value="<%= contact.email || '' %>">
+    </div>
+    <button class="btn btn-primary" type="submit">
+      <%= contact && contact._id ? 'Atualizar' : 'Salvar' %>
+    </button>
+  </form>
+</div>
+
+<%- include('partials/footer') %>

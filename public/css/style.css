@@ -1,0 +1,194 @@
+body {
+  font-family: 'Inter', Arial, sans-serif;
+}
+
+form input, form button {
+  margin-bottom: 10px;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+/* Estilos do Header/Navbar */
+nav.navbar {
+  background-image: linear-gradient(to right, #007bff, #0056b3);
+  background-color: #007bff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 1rem 0;
+}
+
+nav.navbar .navbar-brand {
+  font-weight: 600;
+  font-size: 1.4rem;
+  color: white;
+  text-decoration: none;
+}
+
+nav.navbar .navbar-brand:hover {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+nav.navbar .nav-link {
+  color: white;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+nav.navbar .nav-link:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* Estilos dos botões no header */
+nav.navbar .btn-light {
+  background-color: #28a745;
+  border-color: #28a745;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+nav.navbar .btn-light:hover {
+  background-color: #218838;
+  border-color: #218838;
+  color: white;
+}
+
+nav.navbar .btn-outline-light {
+  border-color: #007bff;
+  color: white;
+  background-color: transparent;
+  transition: all 0.3s ease;
+}
+
+nav.navbar .btn-outline-light:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+  color: white;
+}
+
+/* public/css/style.css */
+table td, table th {
+  vertical-align: middle;
+}
+
+.btn-group .btn {
+  margin-right: 4px;
+}
+
+.card-body {
+  padding: 1.5rem;
+}
+
+/* === AJUSTES PARA BOTÕES DE AÇÃO === */
+
+.action-container {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+}
+
+.action-container a.btn,
+.action-container button.btn {
+  flex: 1 1 0;
+  min-width: 90px;
+  height: 32px; /* altura consistente */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 0.875rem;
+  line-height: 1;
+  padding: 0.375rem 0.5rem;
+  border-radius: 6px;
+}
+
+/* Evita que botão dentro de form quebre layout */
+.action-container form {
+  margin: 0;
+}
+
+.modal-content {
+  border-radius: 12px;
+}
+
+.modal-header {
+  border-bottom: none;
+}
+
+.modal-footer {
+  border-top: none;
+}
+
+.btn-danger {
+  box-shadow: 0 0.25rem 0.5rem rgba(255, 0, 0, 0.2);
+}
+
+/* === Correção de alinhamento dos botões no modal === */
+.modal-footer .btn {
+  flex: 1;                 /* faz os botões ocuparem a mesma largura */
+  margin: 0 4px;           /* pequeno espaçamento lateral */
+  height: 40px;            /* altura uniforme */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+}
+
+/* Aparência harmoniosa */
+.modal-footer .btn-danger {
+  background-color: #dc3545;
+}
+
+.modal-footer .btn-secondary {
+  background-color: #6c757d;
+}
+
+.auth-buttons {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.auth-buttons li {
+  margin: 0;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.btn-login {
+  background-color: #28a745;
+  color: white;
+}
+
+.btn-login:hover {
+  background-color: #218838;
+  color: white;
+}
+
+.btn-cadastrar {
+  background-color: #007bff;
+  color: white;
+}
+
+.btn-cadastrar:hover {
+  background-color: #033e7c;
+  color: white;
+}
+
+.btn-logout {
+  background-color: #dc3545;
+  color: white;
+}
+.btn-logout:hover {
+  background-color: #a71d2a;
+  color: white;
+}
