@@ -18,6 +18,7 @@ Uma aplicação web de agenda de contatos desenvolvida com Node.js, Express e Mo
   - Telefone
   - Email
 - Interface responsiva e amigável
+- Lista de contatos ordenada em ordem alfabética
 - Proteção contra CSRF
 - Segurança aprimorada com Helmet
 

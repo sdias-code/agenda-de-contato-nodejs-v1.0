@@ -41,19 +41,18 @@
                   <!-- Botão que abre o modal -->
                   <button type="button" class="btn btn-sm btn-danger w-100" data-bs-toggle="modal"
                     data-bs-target="#confirmDeleteModal" data-contact-id="<%= c._id %>"
-                    data-contact-name="<%= c.name %> <%= c.surname %>">
+                    data-contact-name="<%= c.name %> <%= c.sobrenome %>">
                     Excluir
                   </button>
                 </div>
               </td>
-
-
-
             </tr>
             <% }) %>
         </tbody>
       </table>
     </div>
   </div>
+
+  <%- include('partials/modal') %>
 
   <%- include('partials/footer') %>

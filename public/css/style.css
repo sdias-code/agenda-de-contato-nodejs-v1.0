@@ -10,7 +10,6 @@ h1 {
   margin-bottom: 20px;
 }
 
-/* Estilos do Header/Navbar */
 nav.navbar {
   background-image: linear-gradient(to right, #007bff, #0056b3);
   background-color: #007bff;
@@ -39,7 +38,6 @@ nav.navbar .nav-link:hover {
   color: rgba(255, 255, 255, 0.8);
 }
 
-/* Estilos dos botões no header */
 nav.navbar .btn-light {
   background-color: #28a745;
   border-color: #28a745;
@@ -66,7 +64,6 @@ nav.navbar .btn-outline-light:hover {
   color: white;
 }
 
-/* public/css/style.css */
 table td, table th {
   vertical-align: middle;
 }
@@ -79,8 +76,6 @@ table td, table th {
   padding: 1.5rem;
 }
 
-/* === AJUSTES PARA BOTÕES DE AÇÃO === */
-
 .action-container {
   display: flex;
   justify-content: center;
@@ -91,7 +86,7 @@ table td, table th {
 .action-container button.btn {
   flex: 1 1 0;
   min-width: 90px;
-  height: 32px; /* altura consistente */
+  height: 32px; 
   display: flex;
   align-items: center;
   justify-content: center;
@@ -102,7 +97,6 @@ table td, table th {
   border-radius: 6px;
 }
 
-/* Evita que botão dentro de form quebre layout */
 .action-container form {
   margin: 0;
 }
@@ -123,18 +117,16 @@ table td, table th {
   box-shadow: 0 0.25rem 0.5rem rgba(255, 0, 0, 0.2);
 }
 
-/* === Correção de alinhamento dos botões no modal === */
 .modal-footer .btn {
-  flex: 1;                 /* faz os botões ocuparem a mesma largura */
-  margin: 0 4px;           /* pequeno espaçamento lateral */
-  height: 40px;            /* altura uniforme */
+  flex: 1;                 
+  margin: 0 4px;         
+  height: 40px;            
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: 500;
 }
 
-/* Aparência harmoniosa */
 .modal-footer .btn-danger {
   background-color: #dc3545;
 }

@@ -1,7 +1,15 @@
 const Contact = require('../models/Contact');
 
 exports.list = async (req, res) => {
-  const contacts = await Contact.find({ createdBy: req.session.user._id });
+  // Buscar e ordenar direto no banco: primeiro por 'nome' e depois por 'sobrenome'
+  let contacts = await Contact.find({ createdBy: req.session.user._id }).sort({ nome: 1, sobrenome: 1 });
+  
+  contacts = contacts.map(c => ({
+    ...c.toObject(),
+    nome: c.nome || '',
+    sobrenome: c.sobrenome || ''
+  }));
+
   res.render('contacts', { contacts });
 };
 
