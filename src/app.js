@@ -12,7 +12,15 @@ const { csrfMiddleware } = require('./middlewares/csrfMiddleware');
 
 const app = express();
 
-app.use(helmet());
+//app.use(helmet());
+
+// para acessar via http://localhost:3000 sem problemas de CORS
+app.use(helmet({ 
+  contentSecurityPolicy: false,
+  crossOriginEmbedderPolicy: false,
+  hsts: false
+}));
+
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(cookieParser());

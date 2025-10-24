@@ -9,6 +9,10 @@ mongoose.connect(process.env.MONGO_URI)
   })
   .catch(err => console.log('Erro MongoDB:', err));
 
+// app.on('ready', () => {
+//   app.listen(3000, '0.0.0.0', () => console.log('🚀 Servidor rodando em http://localhost:3000'));
+// });
+
 app.on('ready', () => {
   app.listen(3000, () => console.log('🚀 Servidor rodando em http://localhost:3000'));
 });
